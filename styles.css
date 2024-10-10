@@ -19,7 +19,7 @@
 }
 
 body {
-    font-family: Poppins, sans-serif;
+    font-family: Poppins;
     background-color: var(--offwhite);
 }
 
@@ -41,7 +41,7 @@ body {
     width: 10vw;
     min-width: 120px;
     font-size: 32px;
-    font-family: Poppins, sans-serif;
+    font-family: Poppins;
     font-weight: 700;
     border-radius: 10px;
     border: 1px solid var(--lightgrey);
