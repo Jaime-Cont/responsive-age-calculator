@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <title>Age Calculator App by J.Contemprato</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <section class="input-section">
+        <form action="javascript:Calculate()">
+          <label for="day-input" class="input-label day-label" id="day-label">DAY</label>
+          <input type="number" id="day-input" name="day-input" placeholder="DD" class="input-number day-number">
+          <p class="input-error day-error" id="day-error-message"> </p>
+          
+          <label for="day-input" class="input-label month-label" id="month-label">MONTH</label>
+          <input type="number" id="month-input" name="month-input" placeholder="MM" class="input-number month-number">
+          <p class="input-error month-error" id="month-error-message"> </p>
+          
+          <label for="day-input" class="input-label year-label" id="year-label">YEAR</label>
+          <input type="number" id="year-input" name="year-input" placeholder="YYYY" class="input-number year-number">
+          <p class="input-error year-error" id="year-error-message"> </p>
+          
+          <div class="divider"></div>
+          <button class="submit-btn"></button>
+        </form>
+      </section>
+      
+      <section class="output-section">
+        <p><span class="purple-text" id="output-years">--</span> years</p>
+        <p><span class="purple-text" id="output-months">--</span> months</p>
+        <p><span class="purple-text" id="output-days">--</span> days</p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/Jaime-Cont" target="_blank">Jaime Contemprato</a>.
+    </div>
+  </body>
+</html>

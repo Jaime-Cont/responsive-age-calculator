@@ -1,0 +1,286 @@
+:root {
+    --purple: hsl(259, 100%, 65%);
+    --light-red: hsl(0, 100%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --offwhite: hsl(0, 0%, 94%);
+    --lightgrey: hsl(0, 0%, 86%);
+    --smokeygrey: hsl(0, 1%, 44%);
+    --offblack: hsl(0, 0%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(https://fonts.google.com/specimen/Poppins);
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    background-color: var(--offwhite);
+}
+
+.submit-btn:hover {
+    background-color: var(--offblack);
+}
+
+.input-label {
+    color: var(--smokeygrey);
+    font-weight: 700;
+    font-size: 18px;
+    position: absolute;
+    letter-spacing: 0.2em;
+}
+
+.input-number {
+    position: absolute;
+    height: 70px;
+    width: 10vw;
+    min-width: 120px;
+    font-size: 32px;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 1px solid var(--lightgrey);
+    color: var(--offblack);
+    text-indent: 25px;
+    transition: 0.5s;
+}
+
+.input-number:focus {
+    border: 1px solid var(--purple);
+    outline: none !important;
+}
+
+.purple-text {
+    color: var(--purple);
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/*For removing Arrows on Number Input*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@media only screen and (max-width: 991px) { /* Mobile */ 
+    main {
+        margin: 75px auto;
+        padding: 50px 50px;
+        width: 50vw;
+        min-width: 350px;
+        height: 60vh;
+        background-color: var(--white);
+        border-radius: 50px 50px 200px 50px;
+        position: relative;
+    }
+
+    .day-label {
+        left: 7%;
+    }
+    
+    .month-label {
+        left: 37%;
+    }
+    
+    .year-label {
+        left: 68%;
+    }
+
+    .day-number {
+        left: 7%;
+        top: 12%;
+    }
+    
+    .month-number {
+        left: 37%;
+        top: 12%;
+    }
+    
+    .year-number {
+        left: 68%;
+        top: 12%;
+    }
+
+    .day-error {
+        left: 7%;
+        top: 24%;
+    }
+    
+    .month-error {
+        left: 37%;
+        top: 24%;
+    }
+    
+    .year-error {
+        left: 68%;
+        top: 24%;
+    }
+
+    .input-error {
+        color: var(--light-red);
+        font-weight: 400;
+        font-style: italic;
+        font-size: 12px;
+        position: absolute;
+    }
+
+    .input-section {
+        margin-bottom: 260px;
+    }
+
+    .divider {
+        background-color: var(--lightgrey);
+        margin: 25px 0;
+        height: 2px;
+        width: 80%;
+        position: absolute;
+        top: 30%;
+        left: 10%;
+    }
+    
+    .submit-btn {
+        height: 80px;
+        width: 80px;
+        position: absolute;
+        top: 28%;
+        left: 45%;
+        background: url(assets/images/icon-arrow.svg);
+        background-repeat: no-repeat;
+        background-color: var(--purple);
+        background-position: center;
+        background-size: 30px 30px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+    }
+
+    .output-section {
+        width: 100%;
+        margin-left: 5%;
+        font-weight: 800;
+        font-style: italic;
+        font-size: calc(3.9rem + .3vw);
+        color: var(--offblack);
+    }
+
+    .output-section > p:nth-child(n+2) {
+        margin-top: -25px;
+    }
+}
+
+@media only screen and (min-width: 992px) { /* Desktops & Laptops */
+    main {
+        margin: 50px auto;
+        padding: 50px 50px;
+        width: 50vw;
+        min-width: 350px;
+        height: 70vh;
+        background-color: var(--white);
+        border-radius: 50px 50px 200px 50px;
+        position: relative;
+    }
+
+    .day-label {
+        left: 10%;
+    }
+    
+    .month-label {
+        left: 34%;
+    }
+    
+    .year-label {
+        left: 58%;
+    }
+
+    .day-number {
+        left: 10%;
+        top: 11%;
+    }
+    
+    .month-number {
+        left: 34%;
+        top: 11%;
+    }
+    
+    .year-number {
+        left: 58%;
+        top: 11%;
+    }
+
+    .day-error {
+        left: 10%;
+        top: 22%;
+    }
+    
+    .month-error {
+        left: 34%;
+        top: 22%;
+    }
+    
+    .year-error {
+        left: 58%;
+        top: 22%;
+    }
+
+    .input-error {
+        color: var(--light-red);
+        font-weight: 400;
+        font-style: italic;
+        font-size: calc(12px + 0.1vw);
+        position: absolute;
+    }
+
+    .input-section {
+        margin-bottom: 210px;
+    }
+
+    .divider {
+        background-color: var(--lightgrey);
+        margin: 25px 0;
+        height: 2px;
+        width: 75%;
+        position: absolute;
+        top: 25%;
+        left: 10%;
+    }
+    
+    .submit-btn {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 22%;
+        left: 80%;
+        background: url(assets/images/icon-arrow.svg);
+        background-repeat: no-repeat;
+        background-color: var(--purple);
+        background-position: center;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .output-section {
+        width: 100%;
+        margin-left: 5%;
+        font-weight: 800;
+        font-style: italic;
+        font-size: calc(90px + 0.15vw);
+        color: var(--offblack);
+    }
+
+    .output-section > p:nth-child(n+2) {
+        margin-top: -50px;
+    }
+}
