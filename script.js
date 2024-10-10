@@ -67,13 +67,53 @@ function Calculate(){
         monthInputElem.style.border = "1px solid var(--lightgrey)";
     }
 
+    let days_in_month = 0;
+    switch(monthInputElem.value) {
+        case '1':
+            days_in_month = 31;
+        break;
+        case '2':
+            days_in_month = 28;
+        break;
+        case '3':
+            days_in_month = 31;
+        break;
+        case '4':
+            days_in_month = 30;
+        break;
+        case '5':
+            days_in_month = 31;
+        break;
+        case '6':
+            days_in_month = 30;
+        break;
+        case '7':
+            days_in_month = 31;
+        break;
+        case '8':
+            days_in_month = 31;
+        break;
+        case '9':
+            days_in_month = 30;
+        break;
+        case '10':
+            days_in_month = 31;
+        break;
+        case '11':
+            days_in_month = 30;
+        break;
+        case '12':
+            days_in_month = 31;
+        break;
+    }
+
     if(dayInputElem.value == "") {
         dayError.innerHTML = "This field is required";
         dayLabel.style.color = "var(--light-red)";
         dayInputElem.style.border = "1px solid var(--light-red)";
         errors++;
     }
-    else if(dayInputElem.value > 31 || dayInputElem.value <= 0) {
+    else if(dayInputElem.value > days_in_month || dayInputElem.value <= 0) {
         dayError.innerHTML = "Must be a valid day";
         dayLabel.style.color = "var(--light-red)";
         dayInputElem.style.border = "1px solid var(--light-red)";
