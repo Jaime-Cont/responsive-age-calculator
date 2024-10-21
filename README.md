@@ -92,3 +92,4 @@ Users should be able to:
 
 - Github - [Jaime Contemprato](https://github.com/Jaime-Cont)
 - Frontend Mentor - [@Jaime-Cont](https://www.frontendmentor.io/profile/Jaime-Cont)
+- LinkedIn - [Jaime Contemprato](https://www.linkedin.com/in/jm-contemprato/)
