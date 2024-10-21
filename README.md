@@ -65,7 +65,6 @@ Users should be able to:
 - After this I would look back and think of the things I wish I did before doing this or that, especially the mobile first workflow, I keep on saying I'll start doing that but here I am, but I'll do better next time!
 - The main thing I did that I'm glad I learned while making this challenge is the incrementing JavaScript code, I used to do game development and seeing functions like these made me realize they aren't so different after all, in fact it made me wanna know what else I can do: 
 ```js
-const proudOfThisFunc = () => {
   function numberIncrease(startNumber, endNumber, element, speed) {
     if (startNumber <= endNumber) {
         document.getElementById(element).innerHTML = startNumber;
@@ -76,7 +75,6 @@ const proudOfThisFunc = () => {
         element.dataset.animationRunning = false
     }
   }
-}
 ```
 - I also learned how to reference and assign HTML elements into JavaScript, I would know how to affect the element and even change the CSS styling if I want it to using if statements, switches, etc.
 - Was overall an amazing experience and looking forward to doing more challenges!
